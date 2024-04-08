@@ -1,5 +1,8 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "!*.md"
   
 website:
   title: Maria Kuruvilla
