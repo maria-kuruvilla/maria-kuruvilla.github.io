@@ -14,6 +14,7 @@ website:
       - publications.qmd
       - teaching.qmd
       - photos.qmd
+      - defense.qmd
     tools:
       - icon: github
         href: https://github.com/maria-kuruvilla
