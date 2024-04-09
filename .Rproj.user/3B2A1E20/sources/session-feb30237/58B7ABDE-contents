@@ -1,0 +1,26 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!*.md"
+  
+website:
+  title: Maria Kuruvilla
+  navbar:
+    title: false
+    left:
+      - index.qmd
+      - projects.qmd
+      - publications.qmd
+      - teaching.qmd
+      - photos.qmd
+      - defense.qmd
+    tools:
+      - icon: github
+        href: https://github.com/maria-kuruvilla
+      
+editor: visual
+
+format:
+  html:
+    theme: sandstone

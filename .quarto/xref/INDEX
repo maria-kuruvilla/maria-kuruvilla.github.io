@@ -1,0 +1,26 @@
+{
+  "projects.qmd": {
+    "projects.html": "3f2421ea"
+  },
+  "blog.qmd": {
+    "blog.html": "dc40f033"
+  },
+  "index.qmd": {
+    "index.html": "5c43c73f"
+  },
+  "posts/salmon.qmd": {
+    "salmon.html": "512e58b8"
+  },
+  "publications.qmd": {
+    "publications.html": "d28929d6"
+  },
+  "teaching.qmd": {
+    "teaching.html": "b32434d9"
+  },
+  "photos.qmd": {
+    "photos.html": "b1071ef9"
+  },
+  "defense.qmd": {
+    "defense.html": "9f27cbc6"
+  }
+}
