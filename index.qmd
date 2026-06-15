@@ -4,17 +4,19 @@ about:
   template: trestles
 ---
 
-![](images/MARIA_KURUVILLA_cropped.jpg)
+![](images/hada.jpg) ![](images/MARIA_KURUVILLA_cropped.jpg)
 
 ## About
 
-## Education
+Welcome! I am a quantitative ecologist who is interested in using available data and statistical methods to answer ecological questions. I am currently a postdoc at University of Victoria investigating the interactions between forestry and salmon.
 
-University of Washington \| Seattle, WA \| PhD in Quantitative Ecology and Resource Management \| Sept 2018 - June 2024
+<!-- ## Education -->
 
-Purdue University \| Indianapolis, IN \| Masters in Physics \| Aug 2016 - May 2018
+<!-- University of Washington \| Seattle, WA \| PhD in Quantitative Ecology and Resource Management \| Sept 2018 - June 2024 -->
 
-Delhi University \| New Delhi, Delhi, B.Sc. in Physics (Honors) \| July 2012 - May 2015
+<!-- Purdue University \| Indianapolis, IN \| Masters in Physics \| Aug 2016 - May 2018 -->
+
+<!-- Delhi University \| New Delhi, Delhi, B.Sc. in Physics (Honors) \| July 2012 - May 2015 -->
 
 <!-- ## Experience -->
 
