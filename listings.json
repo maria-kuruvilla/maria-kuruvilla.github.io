@@ -4,5 +4,16 @@
     "items": [
       "/posts/salmon.html"
     ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/projects/fishery_models.html",
+      "/projects/salmon_forestry.html",
+      "/projects/salmon_migration.html",
+      "/projects/schooling_temperature.html",
+      "/projects/kingfishers.html",
+      "/projects/drosophila.html"
+    ]
   }
 ]

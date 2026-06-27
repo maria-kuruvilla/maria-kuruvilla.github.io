@@ -30,15 +30,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e83117e711fad372bcb8c8022997a9a8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8ebc8b52973aba467d0df9e148d56486.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +69,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-project-grid .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-project-grid'] = new List('listing-project-grid', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -84,27 +145,19 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Maria Kuruvilla</span></a>
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="./#projects"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
-<span class="menu-text">publications</span></a>
+    <a class="nav-link" href="./#publications"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="./#teaching"> 
 <span class="menu-text">Teaching</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./photos.html"> 
-<span class="menu-text">Photos</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./defense.html"> 
-<span class="menu-text">Defense</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -115,41 +168,276 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Maria Kuruvilla</h1>
+
+
+
+
+<div class="hero-banner">
+
+
+
+
+  <div class="hero-content">
+    <h1>Maria Kuruvilla</h1>
+    <hr>
+    
+    <p>Quantitative Ecologist</p>
+    <p>Postdoctoral Fellow, University of Victoria</p>
+    
+  </div>
 </div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<p><img src="images/hada.jpg" class="img-fluid"> <img src="images/MARIA_KURUVILLA_cropped.jpg" class="img-fluid"></p>
-<section id="about" class="level2">
-<h2 data-anchor-id="about">About</h2>
-<p>Welcome! I am a quantitative ecologist who is interested in using available data and statistical methods to answer ecological questions. I am currently a postdoc at University of Victoria investigating the interactions between forestry and salmon.</p>
-<!-- ## Education -->
-<!-- University of Washington \| Seattle, WA \| PhD in Quantitative Ecology and Resource Management \| Sept 2018 - June 2024 -->
-<!-- Purdue University \| Indianapolis, IN \| Masters in Physics \| Aug 2016 - May 2018 -->
-<!-- Delhi University \| New Delhi, Delhi, B.Sc. in Physics (Honors) \| July 2012 - May 2015 -->
-<!-- ## Experience -->
-<!-- Duke University \| Professor \| July 2011 - present -->
-<!-- Posit, PBC \| Developer Educator \| August 2006 - present -->
+<div class="content-container">
+<section id="projects" class="level2">
+<h2 data-anchor-id="projects">Projects</h2>
+<div id="listing-project-grid" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="U2ltdWxhdGlvbiUyQ1Byb2ZpbGUlMjBsaWtlbGlob29kJTJDQmF5ZXNpYW4lMjBTdGF0aXN0aWNz" data-listing-file-modified-sort="1782520794995" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
+<a href="./projects/fishery_models.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/images/parameter_estimation.png" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Parameter Estimation in Fishery Models
+</h5>
+<div class="card-text listing-description delink">
+<p>Parameter Estimation and Identifiability Analysis for Ricker and Beverton-Holt models</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
 
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Q29uc2VydmF0aW9uJTJDQmF5ZXNpYW4lMjBTdGF0aXN0aWNz" data-listing-file-modified-sort="1782521602160" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
+<a href="./projects/salmon_forestry.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/images/hada.jpg" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Forestry effects on Pacific salmon
+</h5>
+<div class="card-text listing-description delink">
+<p>Quantifying the impact of forestry on salmon populations across coastal British Columbia</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
 
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="U3RhdGUtc3BhY2UlMjBtb2RlbHMlMkNBcHBsaWVkJTIwRWNvbG9neSUyQ01vdmVtZW50JTIwRWNvbG9neSUyQ0NvbnNlcnZhdGlvbg==" data-listing-file-modified-sort="1782520798945" data-listing-reading-time-sort="1" data-listing-word-count-sort="161">
+<a href="./projects/salmon_migration.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/images/salmon_migration.jpg" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Salmon migration
+</h5>
+<div class="card-text listing-description delink">
+<p>Modelling Pacific salmon smolt migration timing and social information use</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="QmVoYXZpb3JhbCUyMEVjb2xvZ3klMkNFY3RvdGhlcm0lMjBQaHlzaW9sb2d5" data-listing-file-modified-sort="1782520810108" data-listing-reading-time-sort="1" data-listing-word-count-sort="141">
+<a href="./projects/schooling_temperature.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/images/schooling.jpg" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Temperature Effects on Fish Schooling
+</h5>
+<div class="card-text listing-description delink">
+<p>Analyzing the context-dependent effects of temperature on fish swimming, schooling, and startle responses.</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="Q29uc2VydmF0aW9uJTJDRmllbGR3b3Jr" data-listing-file-modified-sort="1782520782632" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
+<a href="./projects/kingfishers.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/images/belted_kingfisher.jpg" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Observing feeding behavior of Belted Kingfishers
+</h5>
+<div class="card-text listing-description delink">
+<p>Designed fieldwork methods to study the influence of marine habitat characteristics on feeding success in San Juan Island.</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="TmV1cm9iaW9sb2d5JTJDR2VuZXRpY3M=" data-listing-file-modified-sort="1782520922821" data-listing-reading-time-sort="1" data-listing-word-count-sort="152">
+<a href="./projects/drosophila.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/images/drosophila.jpg" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Neuromodulation of Drosophila Flight
+</h5>
+<div class="card-text listing-description delink">
+<p>Identifying the specific neural circuits and GABAergic disinhibition required to maintain extended flight bouts in fruit flies.</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 </section>
-</main></div>
+<section id="publications" class="level2">
+<h2 data-anchor-id="publications">Publications &amp; Writing</h2>
+<section id="peer-reviewed-publications" class="level3">
+<h3 data-anchor-id="peer-reviewed-publications"><strong>Peer-Reviewed Publications</strong></h3>
+<ul>
+<li><strong>Kuruvilla, M.</strong>, Quinn, T. P., Anderson, J. H., Scheuerell, M. D., Miller, E. M., Berger, A. G., … &amp; Berdahl, A. M. (2026). Social influences complement environmental cues to stimulate migrating juvenile salmon. <em>Movement Ecology</em>. <a href="https://doi.org/10.1186/s40462-026-00644-y">https://doi.org/10.1186/s40462-026-00644-y</a></li>
+<li><strong>Kuruvilla, M.</strong>, Dell, A., Olson, A. R., Knouft, J., Grady, J. M., Forbes, J., &amp; Berdahl, A. M. (2023). The effect of temperature on fish swimming and schooling is context dependent. <em>Oikos</em>, 2023(2), e09202. <a href="https://doi.org/10.1111/oik.09202">https://doi.org/10.1111/oik.09202</a></li>
+<li>Booth, H., Yruretagoyena, L., <strong>Kuruvilla, M.</strong>, &amp; Slager, D. L. (2021). On the marine feeding behavior and activity budgets of Belted Kingfishers (Megaceryle alcyon) during the post-fledging period. <em>The Wilson Journal of Ornithology</em>, 133(2), 291-295. <a href="https://doi.org/10.1676/19-00023">https://doi.org/10.1676/19-00023</a></li>
+<li>Manjila, S. B., <strong>Kuruvilla, M.</strong>, Ferveur, J. F., Sane, S. P., &amp; Hasan, G. (2019). Extended flight bouts require disinhibition from GABAergic mushroom body neurons. <em>Current Biology</em>, 29(2), 283-293. <a href="https://doi.org/10.1016/j.cub.2018.11.070">https://doi.org/10.1016/j.cub.2018.11.070</a></li>
+</ul>
+</section>
+<section id="manuscripts-in-review" class="level3">
+<h3 data-anchor-id="manuscripts-in-review"><strong>Manuscripts in Review</strong></h3>
+<ul>
+<li>Hocking, M.D.&nbsp;&amp; <strong>Kuruvilla, M.</strong>, et al.&nbsp;(2026). Cumulative effects of forest harvest on Pacific salmon productivity in coastal British Columbia. [<em>In Review, Science</em>]</li>
+</ul>
+</section>
+<section id="science-communication" class="level3">
+<h3 data-anchor-id="science-communication"><strong>Science Communication</strong></h3>
+<ul>
+<li>Booth, H., <strong>Kuruvilla, M.</strong>, Yruretagoyena, L., (2022) <a href="https://fhl.uw.edu/about/news-and-events/2022/04/27/what-the-belted-kingfisher-families-of-san-juan-island-taught-us-may-2022/">What the Belted Kingfisher families of San Juan Island taught us.</a></li>
+</ul>
+</section>
+<section id="book-reviews" class="level3">
+<h3 data-anchor-id="book-reviews"><strong>Book Reviews</strong></h3>
+<ul>
+<li>Beckert, S. B., Cornies, O., Glass, C., Krichel, L., <strong>Kuruvilla, M.</strong>, &amp; Gwal’salas Speier, J. (2026). Reflections on forest management: Can fish and fiber coexist? <a href="https://doi.org/10.1093/tafafs/vnag007">https://doi.org/10.1093/tafafs/vnag007</a></li>
+</ul>
+</section>
+</section>
+<section id="teaching" class="level2">
+<h2 data-anchor-id="teaching">Teaching &amp; Mentoring</h2>
+<section id="instructor" class="level3">
+<h3 data-anchor-id="instructor"><strong>Instructor</strong></h3>
+<ul>
+<li><strong>Models in Ecology</strong> | <em>University of Victoria (2025)</em>
+<ul>
+<li>Co-instructor for an upper-level undergraduate and graduate course alongside Mark Lewis.</li>
+</ul></li>
+</ul>
+</section>
+<section id="mentorship" class="level3">
+<h3 data-anchor-id="mentorship"><strong>Mentorship</strong></h3>
+<ul>
+<li><strong>Izabelly Rodrigues</strong> | <em>Master’s Student, University of Victoria (2025)</em>
+<ul>
+<li>Mentored Master’s research on stock-recruitment modelling.</li>
+</ul></li>
+<li><strong>Sam Dumas</strong> | <em>Undergraduate Student, University of Toronto (2024 - 2025)</em>
+<ul>
+<li>Mentored undergraduate research on simulating data from stock-recruitment models.</li>
+</ul></li>
+<li><strong>Erika M. Miller</strong> | <em>Undergraduate Student, University of Washington (2023 - 2024)</em>
+<ul>
+<li>Mentored undergraduate research on data processing and coding in R and Python.</li>
+</ul></li>
+</ul>
+</section>
+<section id="teaching-assistant" class="level3">
+<h3 data-anchor-id="teaching-assistant"><strong>Teaching Assistant</strong></h3>
+<ul>
+<li><strong>Ecology and Conservation of Marine Birds and Mammals</strong> | <em>UW Friday Harbor Labs (Summer 2021, Summer 2023)</em>
+<ul>
+<li>Conducted conservation discussions, assisted with field trips, supervised conservation projects, and mentored 6 students on research projects.</li>
+</ul></li>
+<li><strong>Marine Biology in the Field</strong> | <em>UW Friday Harbor Labs (Summer 2023)</em>
+<ul>
+<li>Assisted instructors on field trips, conducted lab experiments, collected invertebrates, taught quantitative methods, and mentored 3 students on research projects.</li>
+</ul></li>
+<li><strong>Analysis for Biology</strong> | <em>University of Washington (4 quarters, 2020 - 2022)</em>
+<ul>
+<li>Conducted and graded quizzes and exams.</li>
+<li>Held office hours for four hours/week to teach students pre-calculus and differentiation.</li>
+</ul></li>
+<li><strong>Ecological Modelling</strong> | <em>University of Washington (Winter 2020)</em>
+<ul>
+<li>Conducted lab sessions and office hours.</li>
+<li>Labs involved introducing Excel, Visual Basic, and R techniques for modelling.</li>
+<li>Helped students with their projects throughout the quarter during office hours.</li>
+</ul></li>
+<li><strong>Introduction to Statistics</strong> | <em>University of Washington (Autumn 2019)</em>
+<ul>
+<li>Conducted weekly lab sessions and held office hours.</li>
+<li>Graded assignments and exams.</li>
+</ul></li>
+</ul>
+<script>
+  // Wait for the page to fully load
+  document.addEventListener('DOMContentLoaded', function () {
+    // Tell Bootstrap to track scroll position and highlight navbar links
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#navbarCollapse', // The ID of Quarto's navbar container
+      offset: 150 // Adjusts for the height of the fixed navbar
+    });
+  });
+</script>
+</section>
+</section>
 </div>
- <!-- /main -->
+
+
+
+
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
