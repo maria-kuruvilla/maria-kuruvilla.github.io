@@ -1,0 +1,19 @@
+---
+title: "Observing feeding behavior of Belted Kingfishers"
+# date: 2017-07-23
+weight: 2
+description: "Designed fieldwork methods to study the influence of marine habitat characteristics on feeding success in San Juan Island."
+image: "images/belted_kingfisher.jpg" 
+categories: ["Conservation", "Fieldwork"]
+---
+
+### Project Overview
+Belted Kingfishers (*Megaceryle alcyon*) are widely distributed across aquatic environments in North America, yet their behavior in marine habitats has remained understudied, particularly during the critical post-fledging period.
+
+For this study, we recorded the daily activity budgets of adult and fledgling Belted Kingfishers across marine environments on San Juan Island, Washington. We specifically investigated how environmental factors (like tides) and age class impacted their marine feeding behaviors and success rates.
+
+### Key Findings
+* **Tidal Influence on Hunting:** Kingfishers exhibited the highest feeding *attempt* rate at high tide, but their actual *strike success* rate peaked at low tide.
+* **Age and Experience:** Adults foraged significantly more successfully than juveniles and captured fish that were nearly twice as large, highlighting the effects of juvenile inexperience during the post-fledging learning phase.
+
+**Read the full paper:** [The Wilson Journal of Ornithology (2021)](https://doi.org/10.1676/19-00023)

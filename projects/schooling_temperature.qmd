@@ -1,0 +1,19 @@
+---
+title: "Temperature Effects on Fish Schooling"
+# date: 2019-08-01
+weight: 3
+description: "Analyzing the context-dependent effects of temperature on fish swimming, schooling, and startle responses."
+image: "images/schooling.jpg" 
+categories: ["Behavioral Ecology", "Ectotherm Physiology"]
+---
+
+### Project Overview
+Temperature is highly influential on the physiology and behavior of ectotherms, but its specific impact on complex social interactions—such as schooling behavior as a defense against predation—is difficult to quantify. 
+
+This research investigated how temperature affects the ability of schooling fish to collectively respond to a predator. We subjected schools of fish to simulated looming predation threats under varying temperature conditions to track their maximum speed, acceleration, and startle latency.
+
+### Key Findings
+* **Context-Dependent Optimal Temperatures:** While speed and acceleration consistently showed a positive curvilinear response to temperature, the optimal temperature at which performance peaked shifted dramatically depending on whether the fish were unperturbed or actively avoiding a threat.
+* **Behavioral Compensation:** Our results suggest that ectothermic fish can compensate for slower swim speeds at lower temperatures by artificially increasing their sensitivity to startle stimuli during predation threats.
+
+**Read the full paper:** [Oikos (2023)](https://doi.org/10.1111/oik.09202)

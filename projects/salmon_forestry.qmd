@@ -1,0 +1,18 @@
+---
+title: "Forestry effects on Pacific salmon"
+# date: 2024-06-01
+weight: 5
+format: html
+description: "Quantifying the impact of forestry on salmon populations across coastal British Columbia"
+image: "images/hada.jpg" 
+categories: ["Conservation", "Bayesian Statistics"]
+---
+
+
+Changes in the structure and functioning of watersheds from forestry can affect the survival and growth of salmon during their freshwater life stages through various mechanisms.
+
+
+We used a multi-stock hierarchical Bayesian model to assess the impact of historical clearcut logging in watersheds on salmon productivity across coastal BC as part of a collaborative project with Musgamagw Dzawada'enuxw Fisheries Group, Salmon Coast Society, University of Toronto, Trinity Consultants, Pacific Salmon Foundation, and Department of Fisheries and Ocean.
+
+
+

@@ -1,0 +1,19 @@
+---
+title: "Neuromodulation of Drosophila Flight"
+
+weight: 1
+description: "Identifying the specific neural circuits and GABAergic disinhibition required to maintain extended flight bouts in fruit flies."
+image: "images/drosophila.jpg" 
+categories: ["Neurobiology", "Genetics"]
+---
+
+### Project Overview
+Insect flight is a complex behavior requiring the real-time integration of multiple sensory inputs with flight motor output. While previous genetic studies identified central brain monoaminergic neurons that modulate flight in *Drosophila melanogaster*, the specific neuro-modulatory circuits underlying sustained, extended flight bouts remained unexplored.
+
+This study focused on how monoaminergic modulation of GABAergic output neurons in the mushroom body (a higher integrating center in the insect brain) regulates the duration of flight bouts.
+
+### Key Findings
+* **Circuit Identification:** We discovered that octopaminergic neurons stimulate central dopaminergic neurons, which in turn project to GABAergic mushroom body output neurons (MBONs).
+* **The 'Flight State':** Inhibiting these octopaminergic/dopaminergic neurons, or activating the GABAergic MBONs, actively reduces flight duration. We propose that the disinhibition of this neural circuit acts as a "released brake" after flight initiation, allowing the fly to maintain an extended flight state to search for distant food sources or mates.
+
+**Read the full paper:** [Current Biology (2019)](https://doi.org/10.1016/j.cub.2018.11.070)

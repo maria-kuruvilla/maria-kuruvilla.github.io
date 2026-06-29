@@ -1,25 +1,116 @@
 ---
-title: "Maria Kuruvilla"
-about:
-  template: trestles
+page-layout: custom
+listing:
+  id: project-grid
+  contents: projects
+  type: grid
+  image-height: 250px
+  sort: "weight desc" # sort by date, newest first
 ---
 
-![](images/hada.jpg) ![](images/MARIA_KURUVILLA_cropped.jpg)
+```{=html}
+<div class="hero-banner">
 
-## About
 
-Welcome! I am a quantitative ecologist who is interested in using available data and statistical methods to answer ecological questions. I am currently a postdoc at University of Victoria investigating the interactions between forestry and salmon.
 
-<!-- ## Education -->
 
-<!-- University of Washington \| Seattle, WA \| PhD in Quantitative Ecology and Resource Management \| Sept 2018 - June 2024 -->
+  <div class="hero-content">
+    <h1>Maria Kuruvilla</h1>
+    <hr>
+    
+    <p>Quantitative Ecologist</p>
+    <p>Postdoctoral Fellow, University of Victoria</p>
+    
+  </div>
+</div>
+```
 
-<!-- Purdue University \| Indianapolis, IN \| Masters in Physics \| Aug 2016 - May 2018 -->
 
-<!-- Delhi University \| New Delhi, Delhi, B.Sc. in Physics (Honors) \| July 2012 - May 2015 -->
 
-<!-- ## Experience -->
+:::{.content-container}
 
-<!-- Duke University \| Professor \| July 2011 - present -->
+## Projects {#projects}
 
-<!-- Posit, PBC \| Developer Educator \| August 2006 - present -->
+:::{#project-grid}
+:::
+
+  
+  
+## Publications & Writing {#publications}
+
+### **Peer-Reviewed Publications**
+
+* **Kuruvilla, M.**, Quinn, T. P., Anderson, J. H., Scheuerell, M. D., Miller, E. M., Berger, A. G., ... & Berdahl, A. M. (2026). Social influences complement environmental cues to stimulate migrating juvenile salmon. *Movement Ecology*. [https://doi.org/10.1186/s40462-026-00644-y](https://doi.org/10.1186/s40462-026-00644-y)
+* **Kuruvilla, M.**, Dell, A., Olson, A. R., Knouft, J., Grady, J. M., Forbes, J., & Berdahl, A. M. (2023). The effect of temperature on fish swimming and schooling is context dependent. *Oikos*, 2023(2), e09202. [https://doi.org/10.1111/oik.09202](https://doi.org/10.1111/oik.09202)
+* Booth, H., Yruretagoyena, L., **Kuruvilla, M.**, & Slager, D. L. (2021). On the marine feeding behavior and activity budgets of Belted Kingfishers (Megaceryle alcyon) during the post-fledging period. *The Wilson Journal of Ornithology*, 133(2), 291-295. [https://doi.org/10.1676/19-00023](https://doi.org/10.1676/19-00023)
+* Manjila, S. B., **Kuruvilla, M.**, Ferveur, J. F., Sane, S. P., & Hasan, G. (2019). Extended flight bouts require disinhibition from GABAergic mushroom body neurons. *Current Biology*, 29(2), 283-293. [https://doi.org/10.1016/j.cub.2018.11.070](https://doi.org/10.1016/j.cub.2018.11.070)
+
+### **Manuscripts in Review**
+
+* Hocking, M.D. & **Kuruvilla, M.**, et al. (2026). Cumulative effects of forest harvest on Pacific salmon productivity in coastal British Columbia. [*In Review, Science*]
+
+### **Science Communication**
+
+* Booth, H., **Kuruvilla, M.**, Yruretagoyena, L., (2022) [What the Belted Kingfisher families of San Juan Island taught us.](https://fhl.uw.edu/about/news-and-events/2022/04/27/what-the-belted-kingfisher-families-of-san-juan-island-taught-us-may-2022/)
+
+### **Book Reviews**
+
+* Beckert, S. B., Cornies, O., Glass, C., Krichel, L., **Kuruvilla, M.**, & Gwal’salas Speier, J. (2026). Reflections on forest management: Can fish and fiber coexist? [https://doi.org/10.1093/tafafs/vnag007](https://doi.org/10.1093/tafafs/vnag007)
+
+
+
+
+
+## Teaching & Mentoring {#teaching}
+
+### **Instructor**
+
+* **Models in Ecology** | *University of Victoria (2025)*
+  * Co-instructor for an upper-level undergraduate and graduate course alongside Mark Lewis.
+
+### **Mentorship**
+
+* **Izabelly Rodrigues** | *Master’s Student, University of Victoria (2025)*
+  * Mentored Master’s research on stock-recruitment modelling.
+* **Sam Dumas** | *Undergraduate Student, University of Toronto (2024 - 2025)*
+  * Mentored undergraduate research on simulating data from stock-recruitment models.
+* **Erika M. Miller** | *Undergraduate Student, University of Washington (2023 - 2024)*
+  * Mentored undergraduate research on data processing and coding in R and Python.
+
+### **Teaching Assistant**
+
+* **Ecology and Conservation of Marine Birds and Mammals** | *UW Friday Harbor Labs (Summer 2021, Summer 2023)*
+  * Conducted conservation discussions, assisted with field trips, supervised conservation projects, and mentored 6 students on research projects.
+* **Marine Biology in the Field** | *UW Friday Harbor Labs (Summer 2023)*
+  * Assisted instructors on field trips, conducted lab experiments, collected invertebrates, taught quantitative methods, and mentored 3 students on research projects.
+* **Analysis for Biology** | *University of Washington (4 quarters, 2020 - 2022)*
+  * Conducted and graded quizzes and exams.
+  * Held office hours for four hours/week to teach students pre-calculus and differentiation.
+* **Ecological Modelling** | *University of Washington (Winter 2020)*
+  * Conducted lab sessions and office hours.
+  * Labs involved introducing Excel, Visual Basic, and R techniques for modelling.
+  * Helped students with their projects throughout the quarter during office hours.
+* **Introduction to Statistics** | *University of Washington (Autumn 2019)*
+  * Conducted weekly lab sessions and held office hours.
+  * Graded assignments and exams.
+  
+  
+  
+  
+
+```{=html}
+<script>
+  // Wait for the page to fully load
+  document.addEventListener('DOMContentLoaded', function () {
+    // Tell Bootstrap to track scroll position and highlight navbar links
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#navbarCollapse', // The ID of Quarto's navbar container
+      offset: 150 // Adjusts for the height of the fixed navbar
+    });
+  });
+</script>
+```
+
+
+
+:::

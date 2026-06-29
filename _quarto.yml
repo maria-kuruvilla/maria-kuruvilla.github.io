@@ -9,12 +9,14 @@ website:
   navbar:
     title: false
     left:
-      - index.qmd
-      - projects.qmd
-      - publications.qmd
-      - teaching.qmd
-      - photos.qmd
-      - defense.qmd
+      - href: index.qmd
+        text: Home
+      - href: "#projects"
+        text: Projects
+      - href: "#publications"
+        text: Publications
+      - href: "#teaching"
+        text: Teaching
     tools:
       - icon: github
         href: https://github.com/maria-kuruvilla
@@ -23,4 +25,7 @@ editor: visual
 
 format:
   html:
-    theme: sandstone
+    theme:
+      - cosmo
+      - custom.scss
+    date-format: null # This hides dates globally
