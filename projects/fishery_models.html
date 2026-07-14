@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Parameter Estimation and Identifiability Analysis for Ricker and Beverton-Holt models">
 
-<title>Parameter Estimation in Fishery Models – Maria Kuruvilla</title>
+<title>Parameter estimation in fishery models – Maria Kuruvilla</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8ebc8b52973aba467d0df9e148d56486.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9ba250de9c0aa8afea154b410bc15ebc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -118,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Parameter Estimation in Fishery Models</h1>
+<h1 class="title">Parameter estimation in fishery models</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Simulation</div>
     <div class="quarto-category">Profile likelihood</div>
@@ -126,11 +128,6 @@ ul.task-list li input[type="checkbox"] {
   </div>
   </div>
 
-<div>
-  <div class="description">
-    Parameter Estimation and Identifiability Analysis for Ricker and Beverton-Holt models
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -145,8 +142,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="columns">
+<!-- style="display: flex; .align-items-start;"} --><div class="column" style="width:55%;">
+<section id="parameter-estimation-and-identifiability-analysis-for-ricker-and-beverton-holt-models" class="level3">
+<h3 class="anchored" data-anchor-id="parameter-estimation-and-identifiability-analysis-for-ricker-and-beverton-holt-models">Parameter Estimation and Identifiability Analysis for Ricker and Beverton-Holt models</h3>
 <p>We used simulations, profile likelihood, and Bayesian hierarchical modelling to check the limitations of commonly used fisheries models, such as the Ricker and the Beverton-Holt model.</p>
 <p>Stay tuned for more.</p>
+</section>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/parameter_estimation.png" class="lightbox" data-gallery="estimation" title="Simulation results, July 2026. Image Credit - Maria Kuruvilla."><img src="images/parameter_estimation.png" class="img-fluid figure-img" alt="Simulation results, July 2026. Image Credit - Maria Kuruvilla."></a></p>
+<figcaption>Simulation results, July 2026. Image Credit - Maria Kuruvilla.</figcaption>
+</figure>
+</div>
+</div>
+</div>
 
 
 
@@ -551,6 +564,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","descPosition":"bottom","loop":false,"openEffect":"fade","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

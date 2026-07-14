@@ -2,7 +2,7 @@
   {
     "objectID": "projects/schooling_temperature.html",
     "href": "projects/schooling_temperature.html",
-    "title": "Temperature Effects on Fish Schooling",
+    "title": "Temperature effects on fish schooling",
     "section": "",
     "text": "Project Overview\nTemperature is highly influential on the physiology and behavior of ectotherms, but its specific impact on complex social interactions—such as schooling behavior as a defense against predation—is difficult to quantify.\nThis research investigated how temperature affects the ability of schooling fish to collectively respond to a predator. We subjected schools of fish to simulated looming predation threats under varying temperature conditions to track their maximum speed, acceleration, and startle latency.\n\n\nKey Findings\n\nContext-Dependent Optimal Temperatures: While speed and acceleration consistently showed a positive curvilinear response to temperature, the optimal temperature at which performance peaked shifted dramatically depending on whether the fish were unperturbed or actively avoiding a threat.\nBehavioral Compensation: Our results suggest that ectothermic fish can compensate for slower swim speeds at lower temperatures by artificially increasing their sensitivity to startle stimuli during predation threats.\n\nRead the full paper: Oikos (2023)"
   },
@@ -11,14 +11,14 @@
     "href": "projects/salmon_forestry.html",
     "title": "Forestry effects on Pacific salmon",
     "section": "",
-    "text": "Changes in the structure and functioning of watersheds from forestry can affect the survival and growth of salmon during their freshwater life stages through various mechanisms.\nWe used a multi-stock hierarchical Bayesian model to assess the impact of historical clearcut logging in watersheds on salmon productivity across coastal BC as part of a collaborative project with Musgamagw Dzawada’enuxw Fisheries Group, Salmon Coast Society, University of Toronto, Trinity Consultants, Pacific Salmon Foundation, and Department of Fisheries and Ocean."
+    "text": "Changes in the structure and functioning of watersheds from forestry can affect the survival and growth of salmon during their freshwater life stages through various mechanisms.\nWe used a multi-stock hierarchical Bayesian model to assess the impact of historical clearcut logging in watersheds on salmon productivity across coastal BC as part of a collaborative project with Musgamagw Dzawada’enuxw Fisheries Group, Salmon Coast Society, University of Toronto, Trinity Consultants, Pacific Salmon Foundation, and Department of Fisheries and Ocean.\nStay tuned for results.\nHocking, M.D. & Kuruvilla, M., et al. (2026). Cumulative effects of forest harvest on Pacific salmon productivity in coastal British Columbia. [In Review, Science]\n\n\n\n\n\n\nHydrometric station at Hada, July 2025. Image Credit - Maria Kuruvilla.\n\n\n\n\n\n\n\n\n\nChum salmon in Shoal River, August 2025. Image Credit - Leila Krichel."
   },
   {
     "objectID": "projects/fishery_models.html",
     "href": "projects/fishery_models.html",
-    "title": "Parameter Estimation in Fishery Models",
+    "title": "Parameter estimation in fishery models",
     "section": "",
-    "text": "We used simulations, profile likelihood, and Bayesian hierarchical modelling to check the limitations of commonly used fisheries models, such as the Ricker and the Beverton-Holt model.\nStay tuned for more."
+    "text": "Parameter Estimation and Identifiability Analysis for Ricker and Beverton-Holt models\nWe used simulations, profile likelihood, and Bayesian hierarchical modelling to check the limitations of commonly used fisheries models, such as the Ricker and the Beverton-Holt model.\nStay tuned for more.\n\n\n\n\n\n\n\nSimulation results, July 2026. Image Credit - Maria Kuruvilla."
   },
   {
     "objectID": "posts/salmon.html",
@@ -26,20 +26,6 @@
     "title": "salmon",
     "section": "",
     "text": "say some things about salmon\n\nhead(iris)\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa\n5          5.0         3.6          1.4         0.2  setosa\n6          5.4         3.9          1.7         0.4  setosa\n\n\n\\(x = y\\)"
-  },
-  {
-    "objectID": "Projects.html",
-    "href": "Projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Pied piper\nSalmon migration"
-  },
-  {
-    "objectID": "Publications.html",
-    "href": "Publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "The effect of temperature on fish swimming and schooling is context dependent (Kuruvilla et al. 2022)\n\n\n\n\n\nReferences\n\nKuruvilla, Maria, Anthony Dell, Ashley R. Olson, Jason Knouft, John M. Grady, Jacob Forbes, and Andrew M. Berdahl. 2022. “The Effect of Temperature on Fish Swimming and Schooling Is Context Dependent.” Oikos 2023 (2). https://doi.org/10.1111/oik.09202."
   },
   {
     "objectID": "blog.html",
@@ -53,7 +39,7 @@
     "href": "index.html#projects",
     "title": "Maria Kuruvilla",
     "section": "Projects",
-    "text": "Projects\n\n\n\n\n\n\n\n\n\n\nParameter Estimation in Fishery Models\n\n\nParameter Estimation and Identifiability Analysis for Ricker and Beverton-Holt models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nForestry effects on Pacific salmon\n\n\nQuantifying the impact of forestry on salmon populations across coastal British Columbia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSalmon migration\n\n\nModelling Pacific salmon smolt migration timing and social information use\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTemperature Effects on Fish Schooling\n\n\nAnalyzing the context-dependent effects of temperature on fish swimming, schooling, and startle responses.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObserving feeding behavior of Belted Kingfishers\n\n\nDesigned fieldwork methods to study the influence of marine habitat characteristics on feeding success in San Juan Island.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeuromodulation of Drosophila Flight\n\n\nIdentifying the specific neural circuits and GABAergic disinhibition required to maintain extended flight bouts in fruit flies.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Projects\n\n\n\n\n\n\n\n\n\n\nParameter estimation in fishery models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nForestry effects on Pacific salmon\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSalmon migration\n\n\nModelling Pacific salmon smolt migration timing and social information use\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTemperature effects on fish schooling\n\n\nAnalyzing the context-dependent effects of temperature on fish swimming, schooling, and startle responses.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObserving feeding behavior of Belted Kingfishers\n\n\nDesigned fieldwork methods to study the influence of marine habitat characteristics on feeding success in San Juan Island.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeuromodulation of Drosophila flight\n\n\nIdentifying the specific neural circuits and GABAergic disinhibition required to maintain extended flight bouts in fruit flies.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#publications",
@@ -72,7 +58,7 @@
   {
     "objectID": "projects/drosophila.html",
     "href": "projects/drosophila.html",
-    "title": "Neuromodulation of Drosophila Flight",
+    "title": "Neuromodulation of Drosophila flight",
     "section": "",
     "text": "Project Overview\nInsect flight is a complex behavior requiring the real-time integration of multiple sensory inputs with flight motor output. While previous genetic studies identified central brain monoaminergic neurons that modulate flight in Drosophila melanogaster, the specific neuro-modulatory circuits underlying sustained, extended flight bouts remained unexplored.\nThis study focused on how monoaminergic modulation of GABAergic output neurons in the mushroom body (a higher integrating center in the insect brain) regulates the duration of flight bouts.\n\n\nKey Findings\n\nCircuit Identification: We discovered that octopaminergic neurons stimulate central dopaminergic neurons, which in turn project to GABAergic mushroom body output neurons (MBONs).\nThe ‘Flight State’: Inhibiting these octopaminergic/dopaminergic neurons, or activating the GABAergic MBONs, actively reduces flight duration. We propose that the disinhibition of this neural circuit acts as a “released brake” after flight initiation, allowing the fly to maintain an extended flight state to search for distant food sources or mates.\n\nRead the full paper: Current Biology (2019)"
   },
@@ -88,6 +74,6 @@
     "href": "projects/salmon_migration.html",
     "title": "Salmon migration",
     "section": "",
-    "text": "Project Overview\nThe large-scale seasonal migrations undertaken by many species require complex navigational and timing decisions. While the environmental factors influencing migration timing are well studied, the role of social interactions remains poorly understood.\nIn this project, we compiled 19 years of trap data from three rivers in Washington state to analyze the downstream seaward migration of juvenile Chinook and coho salmon. Using state-space statistical models, we tested the “pied-piper” hypothesis: that large numbers of migrating hatchery-origin salmon act as a social cue to stimulate the migration of wild salmon.\n\n\nKey Findings\n\nCollective Decision Making: An increase in hatchery salmon counts was a strong predictor for increased migration of wild salmon, acting alongside abiotic factors like temperature, photoperiod, and river flow.\nConservation Implications: Incorporating social information allows animals to benefit from collective decision-making in noisy environments. Understanding how large-scale hatchery releases impact wild populations provides crucial insights for planning the timing and duration of future management efforts.\n\nRead the full paper: Movement Ecology (2026)"
+    "text": "Project Overview\nThe large-scale seasonal migrations undertaken by many species require complex navigational and timing decisions. While the environmental factors influencing migration timing are well studied, the role of social interactions remains poorly understood.\nIn this project, we compiled 19 years of trap data from three rivers in Washington state to analyze the downstream seaward migration of juvenile Chinook and coho salmon.\n\n\nKey Findings\n\nCollective Decision Making: An increase in hatchery salmon counts was a strong predictor for increased migration of wild salmon.\nConservation Implications: Incorporating social information allows animals to benefit from collective decision-making in noisy environments.\n\nRead the full paper: Movement Ecology (2026)\n\n\n\n\n\n\n\n\nJuvenile salmon captured during hatchery release, May 2023. Image credit - Maria Kuruvilla.\n\n\n\n\n\n\n\n\n\n\nJuvenile salmon captured during hatchery release, May 2023. Image credit - Maria Kuruvilla.\n\n\nFish trap in the Dungeness River, May 2023. Image Credit - Maria Kuruvilla."
   }
 ]

@@ -40,7 +40,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8ebc8b52973aba467d0df9e148d56486.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9ba250de9c0aa8afea154b410bc15ebc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -146,21 +149,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="columns">
+<div class="column" style="width:55%;">
 <section id="project-overview" class="level3">
 <h3 class="anchored" data-anchor-id="project-overview">Project Overview</h3>
 <p>The large-scale seasonal migrations undertaken by many species require complex navigational and timing decisions. While the environmental factors influencing migration timing are well studied, the role of social interactions remains poorly understood.</p>
-<p>In this project, we compiled 19 years of trap data from three rivers in Washington state to analyze the downstream seaward migration of juvenile Chinook and coho salmon. Using state-space statistical models, we tested the “pied-piper” hypothesis: that large numbers of migrating hatchery-origin salmon act as a social cue to stimulate the migration of wild salmon.</p>
+<p>In this project, we compiled 19 years of trap data from three rivers in Washington state to analyze the downstream seaward migration of juvenile Chinook and coho salmon.</p>
 </section>
 <section id="key-findings" class="level3">
 <h3 class="anchored" data-anchor-id="key-findings">Key Findings</h3>
 <ul>
-<li><strong>Collective Decision Making:</strong> An increase in hatchery salmon counts was a strong predictor for increased migration of wild salmon, acting alongside abiotic factors like temperature, photoperiod, and river flow.</li>
-<li><strong>Conservation Implications:</strong> Incorporating social information allows animals to benefit from collective decision-making in noisy environments. Understanding how large-scale hatchery releases impact wild populations provides crucial insights for planning the timing and duration of future management efforts.</li>
+<li><strong>Collective Decision Making:</strong> An increase in hatchery salmon counts was a strong predictor for increased migration of wild salmon.</li>
+<li><strong>Conservation Implications:</strong> Incorporating social information allows animals to benefit from collective decision-making in noisy environments.</li>
 </ul>
 <p><strong>Read the full paper:</strong> <a href="https://doi.org/10.1186/s40462-026-00644-y">Movement Ecology (2026)</a></p>
-
-
 </section>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:40%;">
+<div class="lightbox">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/salmon_migration.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-1;title:Juvenile salmon captured during hatchery release, May 2023. Image credit - Maria Kuruvilla.;" data-gallery="migration" title="Juvenile salmon captured during hatchery release, May 2023. Image credit - Maria Kuruvilla."><img src="images/salmon_migration.jpg" class="img-fluid figure-img" alt="Juvenile salmon captured during hatchery release, May 2023. Image credit - Maria Kuruvilla."></a></p>
+<figcaption>Juvenile salmon captured during hatchery release, May 2023. Image credit - Maria Kuruvilla.</figcaption>
+</figure>
+</div>
+<p><a href="images/dungeness_trap.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-2;" data-gallery="migration"><img src="images/dungeness_trap.jpg" class="img-fluid" style="display: none;"></a></p>
+</div>
+</div>
+</div>
+
+
+<div class="hidden" aria-hidden="true">
+<div class="glightbox-desc lightbox-desc-1">
+<p>Juvenile salmon captured during hatchery release, May 2023. Image credit - Maria Kuruvilla.</p>
+</div>
+<div class="glightbox-desc lightbox-desc-2">
+<p>Fish trap in the Dungeness River, May 2023. Image Credit - Maria Kuruvilla.</p>
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -563,6 +590,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","descPosition":"bottom","loop":false,"openEffect":"fade","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

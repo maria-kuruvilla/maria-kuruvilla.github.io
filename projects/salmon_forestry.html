@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Quantifying the impact of forestry on salmon populations across coastal British Columbia">
 
 <title>Forestry effects on Pacific salmon – Maria Kuruvilla</title>
 <style>
@@ -40,7 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8ebc8b52973aba467d0df9e148d56486.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9ba250de9c0aa8afea154b410bc15ebc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -125,11 +127,6 @@ ul.task-list li input[type="checkbox"] {
   </div>
   </div>
 
-<div>
-  <div class="description">
-    Quantifying the impact of forestry on salmon populations across coastal British Columbia
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -144,10 +141,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="columns">
+<!-- style="display: flex; .align-items-start;"} --><div class="column" style="width:55%;">
 <p>Changes in the structure and functioning of watersheds from forestry can affect the survival and growth of salmon during their freshwater life stages through various mechanisms.</p>
 <p>We used a multi-stock hierarchical Bayesian model to assess the impact of historical clearcut logging in watersheds on salmon productivity across coastal BC as part of a collaborative project with Musgamagw Dzawada’enuxw Fisheries Group, Salmon Coast Society, University of Toronto, Trinity Consultants, Pacific Salmon Foundation, and Department of Fisheries and Ocean.</p>
+<p>Stay tuned for results.</p>
+<p>Hocking, M.D.&nbsp;&amp; <strong>Kuruvilla, M.</strong>, et al.&nbsp;(2026). Cumulative effects of forest harvest on Pacific salmon productivity in coastal British Columbia. [<em>In Review, Science</em>]</p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/hada.jpg" class="lightbox" data-gallery="salmon" title="Hydrometric station at Hada, July 2025. Image Credit - Maria Kuruvilla."><img src="images/hada.jpg" class="img-fluid figure-img" alt="Hydrometric station at Hada, July 2025. Image Credit - Maria Kuruvilla."></a></p>
+<figcaption>Hydrometric station at Hada, July 2025. Image Credit - Maria Kuruvilla.</figcaption>
+</figure>
+</div>
+<p><a href="images/chum_salmon_profile.jpg" class="lightbox" data-gallery="salmon" data-glightbox="description: .lightbox-desc-2;"><img src="images/chum_salmon_profile.jpg" class="img-fluid" style="display: none;"></a></p>
+</div>
+</div>
 
 
+<div class="hidden" aria-hidden="true">
+<div class="glightbox-desc lightbox-desc-2">
+<p>Chum salmon in Shoal River, August 2025. Image Credit - Leila Krichel.</p>
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -550,6 +568,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","descPosition":"bottom","loop":false,"openEffect":"fade","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
