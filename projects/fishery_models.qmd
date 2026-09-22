@@ -1,14 +1,32 @@
 ---
-title: "Parameter Estimation in Fishery Models"
+title: "Parameter estimation in fishery models"
 # date: 2025-06-26
 weight: 6
 format: html
-description: "Parameter Estimation and Identifiability Analysis for Ricker and Beverton-Holt models"
 image: "images/parameter_estimation.png" 
 categories: ["Simulation", "Profile likelihood", "Bayesian Statistics"]
 ---
+:::: {.columns}
 
+<!-- style="display: flex; .align-items-start;"} -->
+
+::: {.column width="55%"}
+
+### Parameter Estimation and Identifiability Analysis for Ricker and Beverton-Holt models
 
 We used simulations, profile likelihood, and Bayesian hierarchical modelling to check the limitations of commonly used fisheries models, such as the Ricker and the Beverton-Holt model.
 
 Stay tuned for more.
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+
+![Simulation results, July 2026. Image Credit - Maria Kuruvilla.](images/parameter_estimation.png){group="estimation"}
+:::
+
+::::
+

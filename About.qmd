@@ -3,3 +3,33 @@ title: "About"
 format: html
 ---
 
+:::: {.columns .align-items-center}
+
+::: {.column width="55%"}
+
+Current Position
+
+I am currently a Postdoctoral Fellow at the University of Victoria (UVic) in Victoria, Canada, where I am supervised by Mark Lewis, Martin Krkosek, and Morgan Hocking.
+
+Education
+
+Ph.D. in Quantitative Ecology and Resource Management (QERM)
+University of Washington (2018 – 2024)
+
+M.S. in Physics
+Purdue University (2016 – 2018)
+
+B.S. in Physics (Honors)
+St. Stephen’s College, Delhi University (2012 – 2015)
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="40%"}
+{style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"}
+:::
+
+::::
+---

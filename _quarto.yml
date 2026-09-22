@@ -3,6 +3,8 @@ project:
   render:
     - "*.qmd"
     - "!*.md"
+# filters:
+#   - lightbox
   
 website:
   title: Maria Kuruvilla
@@ -11,6 +13,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: "#about"   
+        text: About Me     
       - href: "#projects"
         text: Projects
       - href: "#publications"
@@ -29,3 +33,9 @@ format:
       - cosmo
       - custom.scss
     date-format: null # This hides dates globally
+    
+    
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: bottom

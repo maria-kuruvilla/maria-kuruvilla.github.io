@@ -32,14 +32,14 @@ html {
 
 // 2. Hero Banner Text Box Styling
 .hero-content {
-  max-width: 800px;
-  padding: 3rem;
+  max-width: 700px;
+  padding: 2rem;
   background-color: rgba(0, 0, 0, 0.5); // A semi-transparent dark box so white text is readable
   border-radius: 10px;
 
   h1 {
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 600;
     text-transform: uppercase;
     color: white;
     margin-bottom: 1rem;
@@ -62,7 +62,7 @@ html {
 
 // 3. Main Content Container
 .content-container {
-  max-width: 900px;      // This prevents the text from getting too wide on large screens
+  max-width: 1000px;      // This prevents the text from getting too wide on large screens
   margin: 0 auto;        // This perfectly centers the invisible box
   padding: 4rem 2rem;    // This adds space at the top/bottom (4rem) and left/right (2rem)
 }
